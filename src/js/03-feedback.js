@@ -21,7 +21,7 @@ function savedAddInput(event) {
 
 function submitForm(event) {
   event.preventDefault();
-  console.log(formData);
+  console.log(JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)));
   localStorage.removeItem(LOCALSTORAGE_KEY)
     form.reset();
 }
